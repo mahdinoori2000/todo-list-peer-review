@@ -1,6 +1,4 @@
 import './style.css';
-// import checkElement from './modules/checkItem.js';
-// import { electron } from 'webpack';
 
 const listEl = document.querySelector('.list-section');
 const inputBtn = document.querySelector('.enter-icon');
