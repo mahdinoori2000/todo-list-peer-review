@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ebebeb;
+  color: #666;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+  height: auto;
+  margin: 200px auto 200px auto;
+  box-shadow: 3px 5px 5px #ddd;
+}
+
+.reset-btn,
+.add-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.title-section,
+.input-section,
+.list-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 24px;
+}
+
+.title-section h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.title-section::after,
+.input-section::after,
+.list-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 2px;
+  background-color: #f3f3f3;
+}
+
+.user-input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 0 0 0 10px;
+  font-size: 20px;
+  margin-top: -11px;
+}
+
+.user-input::placeholder {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.list-section {
+  width: 100%;
+}
+
+.list-item div {
+  display: flex;
+  gap: 20px;
+}
+
+.reload-icon,
+.enter-icon,
+.delete-icon {
+  width: 24px;
+}
+
+.title-section {
+  display: flex;
+}
+
+.list-section ul li {
+  list-style-type: none;
+  display: flex;
+}
+
+.clear-completed-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: #ebebeb;
+  margin-top: -5px;
+}
+
+.edit-input {
+  border: none;
+  font-size: 18px;
+}
+
+.edit-input:focus {
+  outline: none;
+}
+
+.delete-icon:hover {
+  color: red;
+}
